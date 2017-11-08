@@ -29,14 +29,14 @@ body {
 }
 
 .wrapper {
-	width: 1600px;
+	width: 100%;
 	margin: auto;
 	height: 7000px;
 }
 
 .section {
 	margin: 0 auto;
-	width: 1600px;
+	width: 100%;
 	/*height: 770px;*/
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .first_container {
-	width: 75%;
+	width: 85%;
 	height: 770px;
 	margin: 0 auto;
 }
@@ -120,7 +120,7 @@ nav ul li.logo a {
 	letter-spacing: 1px;
 }
 
-.button {
+.first_slide .button {
 	border: 2px solid white;
 	margin: 40px auto;
 	border-radius: 2px;
@@ -146,7 +146,7 @@ nav ul li.logo a {
 }
 
 .container {
-	width: 1200px;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -193,7 +193,20 @@ nav ul li.logo a {
 .content_column .content_logo {
 	margin: 0 auto;
 	text-align: center;
+	font-size: 46px;
+	text-align: center;
+}
 
+.content_logo .fa {
+	border: 2px solid #ccc;
+	padding: 20px;
+	border-radius: 58px;
+	color: #c0301c;
+}
+
+.content_logo .fa:hover {
+	color: #FFFFFF;
+	background-color: #c0301c;
 }
 
 .three_columns {
@@ -276,6 +289,9 @@ nav ul li.logo a {
 	z-index: 12;
 	opacity: 0.5;
 }
+.owl-carousel div {
+	display: inline-block;
+}
 
 .slide_item img:hover div.img_cover {
 	display: block;
@@ -289,9 +305,12 @@ nav ul li.logo a {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)) ;
 	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 20px;
+	grid-row-gap: 30px;
 }
+ .grid div {
 
+	 margin: 0 auto;
+ }
 /* Style the tab */
 div.tab {
 	overflow: hidden;
@@ -329,10 +348,56 @@ margin: 0 auto;
 .tabcontent {
 	display: none;
 	padding: 6px 12px;
-	border: 1px solid #ccc;
 	border-top: none;
 }
 
-/*#all {*/
+#all {
+	display: block;
+}
+
+/*5-6 slides divider*/
+
+.getintouch_section {
+	margin-top: 10%;
+	background: linear-gradient( rgba(192, 48, 28, 0.6),
+	rgba(192, 48, 28, 0.6)),
+	url(../images/touch-back.png) no-repeat 0px 0px;
+	background-size: 100%;
+	height: 360px;
+	text-align: center;
+
+}
+
+
+.getintouch_section div:not(.button) {
+	padding-top: 4%;
+}
+
+.getintouch_section p {
+	color: #ffffff;
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	font-weight: 400;
+	/*line-height: 44px;*/
+	margin-top: -1%;
+}
+
+.getintouch_section .button {
+	color: #ffffff;
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 50px;
+	text-transform: uppercase;
+	border: 2px solid #ffffff;
 	/*display: block;*/
-/*}*/
+	width: 180px;
+	margin: auto;
+	height: 50px;
+}
+
+.button:hover {
+	color: #c0301c;
+	background-color: #fff;
+	font-weight: 800;
+}
